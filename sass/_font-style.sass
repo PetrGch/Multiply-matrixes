@@ -1,0 +1,43 @@
+@font-face 
+	font-family: Segoe
+	src: url(../font/segoe.ttf)
+
+@font-face
+	font-family: 'fontello'
+	src:  url('../font/fontello.woff?45117160') format('woff'), url('../font/icon.ttf?45117160') format('truetype'), url('../font/fontello.svg?45117160#fontello') format('svg')
+	font-weight: normal
+	font-style: normal
+
+[class^="icon"]:before, [class*="icon"]:before 
+	font-family: "fontello"
+	font-style: normal
+	font-weight: normal
+	speak: none
+ 
+	display: inline-block
+	text-decoration: inherit
+	width: 1em
+	margin-right: .2em
+	text-align: center
+	font-variant: normal
+	text-transform: none
+	line-height: 1em
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+ 
+.b-clear__icon:before
+	content: '\e800'
+	transform: scale(-1, 1)
+	-webkit-transform: scale(-1, 1)
+	-moz-transform: scale(-1, 1)
+	-o-transform: scale(-1, 1)
+.b-change__icon:before 
+	content: '\e801'
+	transform: rotate(90deg)
+	-webkit-transform: rotate(90deg)
+	-moz-transform: rotate(90deg)
+	-o-transform: rotate(90deg)
+.b-add__icon:before
+	content: '\e802'
+.b-rem__icon:before
+	content: '\e803'

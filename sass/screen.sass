@@ -1,0 +1,267 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset"
+
+=button-style($width, $height, $bg-top, $bg-btn)
+	display: block
+	width: $width
+	height: $height
+	font: 17px Segoe, Arial, sans-serif
+	color: #555
+	list-style: none
+	border-radius: 3px
+	margin: 10px 10px 10px 0
+	line-height: $height
+	vertical-align: top
+	cursor: pointer
+	border: none
+	outline: none
+	
+	box-shadow: 0 0 3px rgba(0,0,0,.5)
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.5)
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.5)
+
+	background: $bg-top
+	background: -moz-linear-gradient(top,  $bg-top 0%, $bg-btn 100%)
+	background: -webkit-linear-gradient(top,  $bg-top 0%,$bg-btn 100%)
+	background: linear-gradient(to bottom,  $bg-top 0%,$bg-btn 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 )
+
+=button-hover-disabled($bg-top, $bg-btn)
+	background: $bg-top
+	background: -moz-linear-gradient(top,  $bg-top 0%, $bg-btn 100%)
+	background: -webkit-linear-gradient(top,  $bg-top 0%,$bg-btn 100%)
+	background: linear-gradient(to bottom,  $bg-top 0%,$bg-btn 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 )
+
+=button-active($bg-top, $bg-btn, $ln-hight)
+	line-height: $ln-hight
+	background: $bg-top
+	background: -moz-linear-gradient(top,  $bg-top 0%, $bg-btn 100%)
+	background: -webkit-linear-gradient(top,  $bg-top 0%,$bg-btn 100%)
+	background: linear-gradient(to bottom,  $bg-top 0%,$bg-btn 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 )
+
+@import 'font-style'
+
+html 
+	width: 100%
+	height: 100%
+
+body 
+	@extend html
+
+.b-wrapper 
+	@extend html
+	background-color: #fff
+
+.bg-for-sidebar
+	width: 400px
+	height: 100%
+	background-color: #ccc
+	position: fixed
+
+.b-sidebar
+	width: 400px
+	height: 100%	
+	&__multiply
+		background: url(../img/mian-btn.png) no-repeat
+		background-position: 0 -117px
+		width: 255px
+		height: 60px
+		position: relative
+		top: 40px
+		left: 47px
+		border: none
+		outline: none
+		cursor: pointer
+	&__multiply:hover
+		background-position: 0 -177px
+	&__multiply:active
+		background-position: 0 -237px
+	&__error
+		position: relative
+		top: 200px
+		left: 50px
+		font: 17px Segoe, Arial, sans-serif
+		color: #d90602
+		width: 330px
+		margin: 10px 0
+		opacity: 0
+
+.b-multiply__title 
+	font: 20px Segoe, Arial, sans-serif
+	color: #fff
+	text-align: center
+	line-height: 62px
+
+.b-multiply__title:active 
+	line-height: 64px	
+
+.b-mainact 
+	position: relative
+	top: 90px
+	left: 50px
+	width: 300px
+	
+	&__clear 
+		+button-style(210px, 35px, #FCFCFC ,#EBEBEB)
+	&__clear:hover
+		+button-hover-disabled(#f0f0f0, #dedede)
+	&__clear:active
+		+button-active(#CFCFCF, #D9D9D9, 37px) 	
+	&__change
+		+button-style(285px, 35px, #FCFCFC ,#EBEBEB)
+	&__change:hover
+		+button-hover-disabled(#f0f0f0, #dedede)
+	&__change:active
+		+button-active(#CFCFCF, #D9D9D9, 37px)
+
+.b-addrem 
+	position: relative
+	top: 150px
+	left: 50px
+	width: 300px
+	font: 16px Segoe, Arial, sans-serif
+	color: #555
+
+.b-select
+	margin: 0 0 20px -5px
+	&__mat-B
+		margin-left: 20px
+
+.b-row
+	width: 400px
+	height: 50px	
+	&__add 
+		+button-style(125px, 35px, #FCFCFC ,#EBEBEB)
+		display: inline-block
+	&__add:hover
+		+button-hover-disabled(#f0f0f0, #dedede)
+	&__add:active
+		+button-active(#CFCFCF, #D9D9D9, 37px)  	
+	&__rem
+		+button-style(125px, 35px, #FCFCFC ,#EBEBEB)
+		display: inline-block
+	&__rem:hover
+		+button-hover-disabled(#f0f0f0, #dedede)
+	&__rem:active
+		+button-active(#CFCFCF, #D9D9D9, 37px)
+	&__title
+		width: 110px
+		display: inline-block
+		padding-top: 18px
+.b-cell
+	width: 400px
+	height: 50px
+	&__add 
+		+button-style(125px, 35px, #FCFCFC ,#EBEBEB)
+		display: inline-block
+	&__add:hover
+		+button-hover-disabled(#f0f0f0, #dedede)
+	&__add:active
+		+button-active(#CFCFCF, #D9D9D9, 37px) 	
+	&__rem
+		+button-style(125px, 35px, #FCFCFC ,#EBEBEB)
+		display: inline-block
+	&__rem:hover
+		+button-hover-disabled(#f0f0f0, #dedede)
+	&__rem:active
+		+button-active(#CFCFCF, #D9D9D9, 37px)
+	&__title
+		width: 110px
+		display: inline-block
+		padding-top: 18px
+
+.b-content
+	margin: 10px 20px
+	position: absolute
+	top: 10px
+	left: 420px
+
+	&__mat
+		padding: 8px
+		margin: 10px
+		border-right: 2px solid #555
+		border-left: 2px solid #555
+		background: url(../img/bracket.gif) top left no-repeat, url(../img/bracket.gif) bottom left no-repeat, url(../img/bracket.gif) top right no-repeat, url(../img/bracket.gif) bottom right no-repeat
+		background-size: 10px 2px
+		font: 20px Segoe, Arial, sans-serif
+		color: #000
+	&__mat--matc
+		float: left
+		color: #555
+		
+	&__mat--mata
+		float: left
+		position: relative
+	&__mat--mata:after
+		content: 'A'
+		position: absolute
+		bottom: 43%
+		right: -25px
+	&__mat--matb
+		float: left
+		clear: both
+		position: relative
+	&__mat--matb:after
+		content: 'B'
+		position: absolute
+		bottom: -30px
+		left: 46%
+
+td input
+	width: 35px
+	height: 35px
+	margin: 5px
+	outline: none
+	border: 2px solid #ddd
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.2)
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.2)
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.2)
+	font: 13px Segoe, Arial, sans-serif
+	text-align: center
+	padding: 0 0 0 0
+	line-height: 50px
+
+/* addition styles */
+
+.for-input-blur	 
+	color: #ddd
+
+.for-input-focus
+	border: 2px solid #23BFD3
+	color: #555
+	font: 15px Segoe, Arial, sans-serif
+
+.disabled_button
+	+button-hover-disabled(#F0F0F0, #F0F0F0)
+	color: #aaa
+
+.change_mat
+	float: left
+	clear: both
+	position: relative
+
+.change_mat:after
+	content: 'A'
+	position: absolute
+	bottom: -30px
+	left: 46%
+
+.b-sidebar__error
+	font: 16px Segoe, Arial, sans-serif
+	color: #d90602
+	width: 300px
+	line-height: 1.5
+
+.button-focus 
+	+button-hover-disabled(#fcfcfc, #ebebeb)
+	border: 2px solid #5099d9
+
+.mainButtonDisable
+	background-position: 0 -58px
+	cursor: auto

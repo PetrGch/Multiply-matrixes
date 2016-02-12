@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TestTask</title>
+	<script src="js/jquery.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/handler.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/screen.css">
+</head>
+<body>
+	<div class="b-wrapper">
+		<div class="bg-for-sidebar"></div>
+		<div class="b-sidebar">
+			<button class="b-sidebar__multiply b-multiply">
+				<p name="main" class="b-multiply__title">Умножить матрицы</p>
+			</button>
+			<div class="b-sidebar__mainact b-mainact">
+				<button class="b-mainact__clear b-clear"><p class="b-clear__icon">Очистить матрицы</p></button>
+				<button class="b-mainact__change b-change"><p class="b-change__icon">Поменять матрицы местами</p></button>
+			</div>
+			<div class="b-sidebar__addrem b-addrem">
+				<form class="b-addrem__select b-select">
+					<input type="radio" class="b-select__mat-A" name="mat" value="A"> Матрица А
+  				<input type="radio" class="b-select__mat-B" name="mat" value="B" checked="checked"> Матрица В
+				</form>
+				<div class="b-addrem__rowcell b-rowcell">
+					<div class="b-rowcell__row b-row">
+						<button class="b-row__add b-add"><p class="b-add__icon">Добавить</p></button>
+						<button class="b-row__rem b-rem"><p class="b-rem__icon">Удалить</p></button>
+						<p class="b-row__title">Строку</p>
+					</div>
+					<div class="b-rowcell__cell b-cell">
+						<button class="b-cell__add b-add"><p class="b-add__icon">Добавить</p></button>
+						<button class="b-cell__rem b-rem"><p class="b-rem__icon">Удалить</p></button>
+						<p class="b-cell__title">Столбец</p>
+					</div>
+				</div>
+			</div>
+			<p class="b-sidebar__error">Такие матрицы неьльзя перемножить, <br/> так как количество столбцов матрицы А не равно количеству строк матрицы В.</p>
+		</div>
+
+		<div class="b-content">
+			<form class="b-content__mat b-content__mat--matc">
+				<table>
+					<tr>
+						<td>
+							<input type="text" placeholder="c1,1" disabled="disabled">
+						</td>
+						<td>
+							<input type="text" placeholder="c1,2" disabled="disabled">
+						</td>
+						<td>
+							<input type="text" placeholder="c1,3" disabled="disabled">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" placeholder="c2,1" disabled="disabled">
+						</td>
+						<td>
+							<input type="text" placeholder="c2,2" disabled="disabled">
+						</td>
+						<td>
+							<input type="text" placeholder="c2,3" disabled="disabled">
+						</td>
+					</tr>	
+					<tr>
+						<td>
+							<input type="text" placeholder="c3,1" disabled="disabled">
+						</td>
+						<td>
+							<input type="text" placeholder="c3,2" disabled="disabled">
+						</td>
+						<td>
+							<input type="text" placeholder="c3,3" disabled="disabled">
+						</td>					
+					</tr>
+					<tr>
+						<td>
+							<input type="text" placeholder="c4,1" disabled="disabled">
+						</td>
+						<td>
+							<input type="text" placeholder="c4,2" disabled="disabled">
+						</td>
+						<td>
+							<input type="text" placeholder="c4,3" disabled="disabled">
+						</td>
+					</tr>
+				</table>
+			</form>
+
+			<form class="b-content__mat b-content__mat--mata">				
+				<table>		
+					<tr>							
+						<td>
+							<input id="boxA_1_1" type="text" placeholder="a1,1">
+						</td>
+						<td>
+							<input id="boxA_1_2" type="text" placeholder="a1,2">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input id="boxA_2_1" type="text" placeholder="a2,1">
+						</td>
+						<td>
+							<input id="boxA_2_2" type="text" placeholder="a2,2">
+						</td>
+					</tr>	
+					<tr>
+						<td>
+							<input id="boxA_3_1" type="text" placeholder="a3,1">
+						</td>
+						<td>
+							<input id="boxA_3_2" type="text" placeholder="a3,2">
+						</td>					
+					</tr>
+					<tr>
+						<td>
+							<input id="boxA_4_1" type="text" placeholder="a4,1">
+						</td>
+						<td>
+							<input id="boxA_4_2" type="text" placeholder="a4,2">
+						</td>
+					</tr>
+				</table>	
+			</form>
+
+			<form class="b-content__mat b-content__mat--matb">
+				<table>
+					<tr>
+						<td>
+							<input id="boxB_1_1" type="text" placeholder="b1,1">
+						</td>
+						<td>
+							<input id="boxB_1_2" type="text" placeholder="b1,2">
+						</td>
+						<td>
+							<input id="boxB_1_3" type="text" placeholder="b1,3">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input id="boxB_2_1" type="text" placeholder="b2,1">
+						</td>
+						<td>
+							<input id="boxB_2_2" type="text" placeholder="b2,2">
+						</td>
+						<td>
+							<input id="boxB_2_3" type="text" placeholder="b2,3">
+						</td>
+					</tr>	
+
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

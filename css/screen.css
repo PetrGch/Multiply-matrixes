@@ -1,0 +1,623 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, .b-wrapper, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, .b-wrapper {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: Segoe;
+  src: url(../font/segoe.ttf);
+}
+@font-face {
+  font-family: "fontello";
+  src: url("../font/fontello.woff?45117160") format("woff"), url("../font/icon.ttf?45117160") format("truetype"), url("../font/fontello.svg?45117160#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 11, ../sass/_font-style.sass */
+[class^="icon"]:before, [class*="icon"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 28, ../sass/_font-style.sass */
+.b-clear__icon:before {
+  content: "";
+  transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+}
+
+/* line 34, ../sass/_font-style.sass */
+.b-change__icon:before {
+  content: "";
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+/* line 40, ../sass/_font-style.sass */
+.b-add__icon:before {
+  content: "";
+}
+
+/* line 42, ../sass/_font-style.sass */
+.b-rem__icon:before {
+  content: "";
+}
+
+/* line 50, ../sass/screen.sass */
+html, body, .b-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 57, ../sass/screen.sass */
+.b-wrapper {
+  background-color: #fff;
+}
+
+/* line 61, ../sass/screen.sass */
+.bg-for-sidebar {
+  width: 400px;
+  height: 100%;
+  background-color: #ccc;
+  position: fixed;
+}
+
+/* line 67, ../sass/screen.sass */
+.b-sidebar {
+  width: 400px;
+  height: 100%;
+}
+/* line 70, ../sass/screen.sass */
+.b-sidebar__multiply {
+  background: url(../img/mian-btn.png) no-repeat;
+  background-position: 0 -117px;
+  width: 255px;
+  height: 60px;
+  position: relative;
+  top: 40px;
+  left: 47px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* line 81, ../sass/screen.sass */
+.b-sidebar__multiply:hover {
+  background-position: 0 -177px;
+}
+/* line 83, ../sass/screen.sass */
+.b-sidebar__multiply:active {
+  background-position: 0 -237px;
+}
+/* line 85, ../sass/screen.sass */
+.b-sidebar__error {
+  position: relative;
+  top: 200px;
+  left: 50px;
+  font: 17px Segoe, Arial, sans-serif;
+  color: #d90602;
+  width: 330px;
+  margin: 10px 0;
+  opacity: 0;
+}
+
+/* line 95, ../sass/screen.sass */
+.b-multiply__title {
+  font: 20px Segoe, Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+  line-height: 62px;
+}
+
+/* line 101, ../sass/screen.sass */
+.b-multiply__title:active {
+  line-height: 64px;
+}
+
+/* line 104, ../sass/screen.sass */
+.b-mainact {
+  position: relative;
+  top: 90px;
+  left: 50px;
+  width: 300px;
+}
+/* line 110, ../sass/screen.sass */
+.b-mainact__clear {
+  display: block;
+  width: 210px;
+  height: 35px;
+  font: 17px Segoe, Arial, sans-serif;
+  color: #555;
+  list-style: none;
+  border-radius: 3px;
+  margin: 10px 10px 10px 0;
+  line-height: 35px;
+  vertical-align: top;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background: #FCFCFC;
+  background: -moz-linear-gradient(top, #FCFCFC 0%, #EBEBEB 100%);
+  background: -webkit-linear-gradient(top, #FCFCFC 0%, #EBEBEB 100%);
+  background: linear-gradient(to bottom, #FCFCFC 0%, #EBEBEB 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 112, ../sass/screen.sass */
+.b-mainact__clear:hover {
+  background: #f0f0f0;
+  background: -moz-linear-gradient(top, #f0f0f0 0%, #dedede 100%);
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #dedede 100%);
+  background: linear-gradient(to bottom, #f0f0f0 0%, #dedede 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 114, ../sass/screen.sass */
+.b-mainact__clear:active {
+  line-height: 37px;
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #CFCFCF 0%, #D9D9D9 100%);
+  background: -webkit-linear-gradient(top, #CFCFCF 0%, #D9D9D9 100%);
+  background: linear-gradient(to bottom, #CFCFCF 0%, #D9D9D9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 116, ../sass/screen.sass */
+.b-mainact__change {
+  display: block;
+  width: 285px;
+  height: 35px;
+  font: 17px Segoe, Arial, sans-serif;
+  color: #555;
+  list-style: none;
+  border-radius: 3px;
+  margin: 10px 10px 10px 0;
+  line-height: 35px;
+  vertical-align: top;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background: #FCFCFC;
+  background: -moz-linear-gradient(top, #FCFCFC 0%, #EBEBEB 100%);
+  background: -webkit-linear-gradient(top, #FCFCFC 0%, #EBEBEB 100%);
+  background: linear-gradient(to bottom, #FCFCFC 0%, #EBEBEB 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 118, ../sass/screen.sass */
+.b-mainact__change:hover {
+  background: #f0f0f0;
+  background: -moz-linear-gradient(top, #f0f0f0 0%, #dedede 100%);
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #dedede 100%);
+  background: linear-gradient(to bottom, #f0f0f0 0%, #dedede 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 120, ../sass/screen.sass */
+.b-mainact__change:active {
+  line-height: 37px;
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #CFCFCF 0%, #D9D9D9 100%);
+  background: -webkit-linear-gradient(top, #CFCFCF 0%, #D9D9D9 100%);
+  background: linear-gradient(to bottom, #CFCFCF 0%, #D9D9D9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+
+/* line 123, ../sass/screen.sass */
+.b-addrem {
+  position: relative;
+  top: 150px;
+  left: 50px;
+  width: 300px;
+  font: 16px Segoe, Arial, sans-serif;
+  color: #555;
+}
+
+/* line 131, ../sass/screen.sass */
+.b-select {
+  margin: 0 0 20px -5px;
+}
+/* line 133, ../sass/screen.sass */
+.b-select__mat-B {
+  margin-left: 20px;
+}
+
+/* line 136, ../sass/screen.sass */
+.b-row {
+  width: 400px;
+  height: 50px;
+}
+/* line 139, ../sass/screen.sass */
+.b-row__add {
+  display: block;
+  width: 125px;
+  height: 35px;
+  font: 17px Segoe, Arial, sans-serif;
+  color: #555;
+  list-style: none;
+  border-radius: 3px;
+  margin: 10px 10px 10px 0;
+  line-height: 35px;
+  vertical-align: top;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background: #FCFCFC;
+  background: -moz-linear-gradient(top, #FCFCFC 0%, #EBEBEB 100%);
+  background: -webkit-linear-gradient(top, #FCFCFC 0%, #EBEBEB 100%);
+  background: linear-gradient(to bottom, #FCFCFC 0%, #EBEBEB 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+  display: inline-block;
+}
+/* line 142, ../sass/screen.sass */
+.b-row__add:hover {
+  background: #f0f0f0;
+  background: -moz-linear-gradient(top, #f0f0f0 0%, #dedede 100%);
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #dedede 100%);
+  background: linear-gradient(to bottom, #f0f0f0 0%, #dedede 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 144, ../sass/screen.sass */
+.b-row__add:active {
+  line-height: 37px;
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #CFCFCF 0%, #D9D9D9 100%);
+  background: -webkit-linear-gradient(top, #CFCFCF 0%, #D9D9D9 100%);
+  background: linear-gradient(to bottom, #CFCFCF 0%, #D9D9D9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 146, ../sass/screen.sass */
+.b-row__rem {
+  display: block;
+  width: 125px;
+  height: 35px;
+  font: 17px Segoe, Arial, sans-serif;
+  color: #555;
+  list-style: none;
+  border-radius: 3px;
+  margin: 10px 10px 10px 0;
+  line-height: 35px;
+  vertical-align: top;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background: #FCFCFC;
+  background: -moz-linear-gradient(top, #FCFCFC 0%, #EBEBEB 100%);
+  background: -webkit-linear-gradient(top, #FCFCFC 0%, #EBEBEB 100%);
+  background: linear-gradient(to bottom, #FCFCFC 0%, #EBEBEB 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+  display: inline-block;
+}
+/* line 149, ../sass/screen.sass */
+.b-row__rem:hover {
+  background: #f0f0f0;
+  background: -moz-linear-gradient(top, #f0f0f0 0%, #dedede 100%);
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #dedede 100%);
+  background: linear-gradient(to bottom, #f0f0f0 0%, #dedede 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 151, ../sass/screen.sass */
+.b-row__rem:active {
+  line-height: 37px;
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #CFCFCF 0%, #D9D9D9 100%);
+  background: -webkit-linear-gradient(top, #CFCFCF 0%, #D9D9D9 100%);
+  background: linear-gradient(to bottom, #CFCFCF 0%, #D9D9D9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 153, ../sass/screen.sass */
+.b-row__title {
+  width: 110px;
+  display: inline-block;
+  padding-top: 18px;
+}
+
+/* line 157, ../sass/screen.sass */
+.b-cell {
+  width: 400px;
+  height: 50px;
+}
+/* line 160, ../sass/screen.sass */
+.b-cell__add {
+  display: block;
+  width: 125px;
+  height: 35px;
+  font: 17px Segoe, Arial, sans-serif;
+  color: #555;
+  list-style: none;
+  border-radius: 3px;
+  margin: 10px 10px 10px 0;
+  line-height: 35px;
+  vertical-align: top;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background: #FCFCFC;
+  background: -moz-linear-gradient(top, #FCFCFC 0%, #EBEBEB 100%);
+  background: -webkit-linear-gradient(top, #FCFCFC 0%, #EBEBEB 100%);
+  background: linear-gradient(to bottom, #FCFCFC 0%, #EBEBEB 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+  display: inline-block;
+}
+/* line 163, ../sass/screen.sass */
+.b-cell__add:hover {
+  background: #f0f0f0;
+  background: -moz-linear-gradient(top, #f0f0f0 0%, #dedede 100%);
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #dedede 100%);
+  background: linear-gradient(to bottom, #f0f0f0 0%, #dedede 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 165, ../sass/screen.sass */
+.b-cell__add:active {
+  line-height: 37px;
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #CFCFCF 0%, #D9D9D9 100%);
+  background: -webkit-linear-gradient(top, #CFCFCF 0%, #D9D9D9 100%);
+  background: linear-gradient(to bottom, #CFCFCF 0%, #D9D9D9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 167, ../sass/screen.sass */
+.b-cell__rem {
+  display: block;
+  width: 125px;
+  height: 35px;
+  font: 17px Segoe, Arial, sans-serif;
+  color: #555;
+  list-style: none;
+  border-radius: 3px;
+  margin: 10px 10px 10px 0;
+  line-height: 35px;
+  vertical-align: top;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background: #FCFCFC;
+  background: -moz-linear-gradient(top, #FCFCFC 0%, #EBEBEB 100%);
+  background: -webkit-linear-gradient(top, #FCFCFC 0%, #EBEBEB 100%);
+  background: linear-gradient(to bottom, #FCFCFC 0%, #EBEBEB 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+  display: inline-block;
+}
+/* line 170, ../sass/screen.sass */
+.b-cell__rem:hover {
+  background: #f0f0f0;
+  background: -moz-linear-gradient(top, #f0f0f0 0%, #dedede 100%);
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #dedede 100%);
+  background: linear-gradient(to bottom, #f0f0f0 0%, #dedede 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 172, ../sass/screen.sass */
+.b-cell__rem:active {
+  line-height: 37px;
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #CFCFCF 0%, #D9D9D9 100%);
+  background: -webkit-linear-gradient(top, #CFCFCF 0%, #D9D9D9 100%);
+  background: linear-gradient(to bottom, #CFCFCF 0%, #D9D9D9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+}
+/* line 174, ../sass/screen.sass */
+.b-cell__title {
+  width: 110px;
+  display: inline-block;
+  padding-top: 18px;
+}
+
+/* line 179, ../sass/screen.sass */
+.b-content {
+  margin: 10px 20px;
+  position: absolute;
+  top: 10px;
+  left: 420px;
+}
+/* line 185, ../sass/screen.sass */
+.b-content__mat {
+  padding: 8px;
+  margin: 10px;
+  border-right: 2px solid #555;
+  border-left: 2px solid #555;
+  background: url(../img/bracket.gif) top left no-repeat, url(../img/bracket.gif) bottom left no-repeat, url(../img/bracket.gif) top right no-repeat, url(../img/bracket.gif) bottom right no-repeat;
+  background-size: 10px 2px;
+  font: 20px Segoe, Arial, sans-serif;
+  color: #000;
+}
+/* line 194, ../sass/screen.sass */
+.b-content__mat--matc {
+  float: left;
+  color: #555;
+}
+/* line 198, ../sass/screen.sass */
+.b-content__mat--mata {
+  float: left;
+  position: relative;
+}
+/* line 201, ../sass/screen.sass */
+.b-content__mat--mata:after {
+  content: "A";
+  position: absolute;
+  bottom: 43%;
+  right: -25px;
+}
+/* line 206, ../sass/screen.sass */
+.b-content__mat--matb {
+  float: left;
+  clear: both;
+  position: relative;
+}
+/* line 210, ../sass/screen.sass */
+.b-content__mat--matb:after {
+  content: "B";
+  position: absolute;
+  bottom: -30px;
+  left: 46%;
+}
+
+/* line 216, ../sass/screen.sass */
+td input {
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+  outline: none;
+  border: 2px solid #ddd;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  font: 13px Segoe, Arial, sans-serif;
+  text-align: center;
+  padding: 0 0 0 0;
+  line-height: 50px;
+}
+
+/* addition styles */
+/* line 232, ../sass/screen.sass */
+.for-input-blur {
+  color: #ddd;
+}
+
+/* line 235, ../sass/screen.sass */
+.for-input-focus {
+  border: 2px solid #23BFD3;
+  color: #555;
+  font: 15px Segoe, Arial, sans-serif;
+}
+
+/* line 240, ../sass/screen.sass */
+.disabled_button {
+  background: #F0F0F0;
+  background: -moz-linear-gradient(top, #F0F0F0 0%, #F0F0F0 100%);
+  background: -webkit-linear-gradient(top, #F0F0F0 0%, #F0F0F0 100%);
+  background: linear-gradient(to bottom, #F0F0F0 0%, #F0F0F0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+  color: #aaa;
+}
+
+/* line 244, ../sass/screen.sass */
+.change_mat {
+  float: left;
+  clear: both;
+  position: relative;
+}
+
+/* line 249, ../sass/screen.sass */
+.change_mat:after {
+  content: "A";
+  position: absolute;
+  bottom: -30px;
+  left: 46%;
+}
+
+/* line 255, ../sass/screen.sass */
+.b-sidebar__error {
+  font: 16px Segoe, Arial, sans-serif;
+  color: #d90602;
+  width: 300px;
+  line-height: 1.5;
+}
+
+/* line 261, ../sass/screen.sass */
+.button-focus {
+  background: #fcfcfc;
+  background: -moz-linear-gradient(top, #fcfcfc 0%, #ebebeb 100%);
+  background: -webkit-linear-gradient(top, #fcfcfc 0%, #ebebeb 100%);
+  background: linear-gradient(to bottom, #fcfcfc 0%, #ebebeb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-top', endColorstr='$bg-btn',GradientType=0 );
+  border: 2px solid #5099d9;
+}
+
+/* line 265, ../sass/screen.sass */
+.mainButtonDisable {
+  background-position: 0 -58px;
+  cursor: auto;
+}
